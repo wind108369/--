@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .text{
+                position: absolute;
+                height: 150px;
+                width: 600px;
+                font-family: '华文行楷';
+                color: white;
+                font-size: 60px;
+                line-height: 100px;
+                padding: 0 150px;
+                text-shadow: white 0 0 10px;
+            }
+            .little-text {
+                top: 50px;
+                font-size: 30px;
+                left: 700px;
+            }
+            .temp {
+                background: url(repeat-big1.jpg) repeat no-repeat;
+                height: 769px;
+                padding: 0 100px;
+                position: absolute;
+                width: 1800px;
+                z-index: -1;
+                top: 0;
+            }
+            .content1 {
+                position: absolute;
+                top: 150px;
+                left: 250px;
+            }
+            .content2 {
+                position: absolute;
+                left: 550px;
+                top: 350px; 
+            }
+            .content p {
+                font-family: '华文行楷';
+                font-size: 30px;
+                text-shadow: white 0 0 30px;
+                color: #333;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background:url(repeat-top.png) repeat no-repeat;height:150px;padding:0 100px;">
+            <div class="text">再遇时光</div>
+            <!--div style="background:url(top.png) no-repeat;height:150px;margin-left:700px;"></div-->
+            <!--img src=top1.png width=960 height=150 /-->
+            <div class="text little-text">Maggie ♥ Neil</div>
+        </div>
+        <div class="temp" style="background:url(repeat-big1.jpg) repeat no-repeat;height:769px;padding:0 100px;">
+            
+            
+        </div>     
+        <img src=big1.png width=960 height=619 style="margin:0 100px"/>
+        <div class="content content1">
+            <p>萍水一见风云淡</p>
+            <p>一襟青衣</p>
+            <p>若惊鸿</p>
+            <p>似游龙</p>
+            <p>挥不去</p>
+            <p>忘难却</p>
+            <p>梦未央</p>
+        </div>
+        <div class="content content2">
+            <p>时光再遇</p>
+            <p>前缘续新曲</p>
+            <p>锦瑟华年</p>
+            <p>不羡神仙</p>
+            <p>只恋人间</p>
+        </div>
+        <canvas width=2000 height=768 id="a"></canvas>
+        <script>
+            var $ = function (id) {
+                return document.getElementById(id);
+            }
+            var c = $('a');
+            var ct = c.getContext('2d');
+            var i1 = new Image();
+            i1.src = 'temp.png';
+            var i2 = new Image();
+            i2.src = 'a.png';
+
+            var w1 = 462;
+            var w2 = 40;
+
+            var h = 548;
+
+            function draw(n) {
+                c.width = c.width;
+                ct.drawImage(i1, 0, 0, w1, h);
+                ct.drawImage(i2, w1 + n, 0, w2, h);
+
+                var data1 = ct.getImageData(0, 0, w1, h).data;
+                var data2 = ct.getImageData(w1 + n, 0, w2, h).data;
+                var imageData = ct.createImageData(n, h);
+                var data3 = imageData.data;
+
+                for (var i = 0; i < h; i ++) {
+                    var bx = (i + 1) * w1 - 1;
+                    var ex = i * w2;
+                    var deltaR = (data2[ex * 4] - data1[bx * 4]) / n;
+                    var deltaG = (data2[ex * 4 + 1] - data1[bx * 4 + 1]) / n;
+                    var deltaB = (data2[ex * 4 + 2] - data1[bx * 4 + 2]) / n;
+                    
+                    for (var j = 0; j < n; j ++) {
+                        data3[(i * n + j) * 4] = data1[bx * 4] + j * deltaR;
+                        data3[(i * n + j) * 4 + 1] = data1[bx * 4 + 1] + j * deltaG;
+                        data3[(i * n + j) * 4 + 2] = data1[bx * 4 + 2] + j * deltaB;
+                        data3[(i * n + j) * 4 + 3] = 255;
+                    }
+                }
+                ct.putImageData(imageData, w1, 0);
+            }
+            
+
+            
+        </script>
+    </body>
+</html>

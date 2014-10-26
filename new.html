@@ -1,0 +1,487 @@
+<div class="bd">
+    <div class="custom-area">
+        
+        <!--table border="0" cellpadding="10" cellspacing="0" width="750" background="http://img04.taobaocdn.com/imgextra/i4/T1KangXfdgXXcVQjv2-670012614.gif">
+            <tbody id="big-table-body">
+            </tbody>
+        </table-->
+        <div id="my-container"></div>
+        <script type="text/javascript">
+            var G = function (id) {
+                return document.getElementById(id);
+            };
+            (function () {
+                /*var c = [{
+                    a: 'http://item.taobao.com/item.htm?spm=a1z10.3.w4002-8401482095.63.CjkB4L&amp;id=40718251126&amp;scene=taobao_shop',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i3/TB1tGTWFVXXXXaGXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',
+                    s: 1
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=a1z10.3.w4002-8401482095.57.CjkB4L&amp;id=40717907291&amp;scene=taobao_shop',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i4/TB1kXLBFVXXXXXbXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',
+                    s: 1
+                }, 0, {// 收藏本店
+                    a: 'http://favorite.taobao.com/popup/add_collection.htm?spm=a1z10.1.0.0.lTvqLA&id=112949449&itemid=112949449&itemtype=0&sellerid=797603252&scjjc=2',
+                    i: 'http://img03.taobaocdn.com/imgextra/i3/T1ziYgXX0dXXasRPv2-670012614.jpg',
+                    s: 2
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=a1z10.3.w4002-8401482095.42.CjkB4L&amp;id=40716459445&amp;scene=taobao_shop',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i4/TB1c963FVXXXXcMXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',
+                    s: 1
+                }, 0, {
+                    a: 'http://item.taobao.com/item.htm?spm=a1z10.3.w4002-8401482095.54.CjkB4L&amp;id=40767952565&amp;scene=taobao_shop',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i4/TB1Fa6AFVXXXXbFXFXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',
+                    s: 1
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=a1z10.3.w4002-8401482095.84.CjkB4L&amp;id=40718479733&amp;scene=taobao_shop',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i2/TB1LBghFVXXXXaAXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg',
+                    s: 1
+                }];
+                var h = '';
+                var f = 0;
+                for (var i =0 ;i < c.length; i++) {
+                    if (f % 3 == 0) {
+                        h += '<tr>'
+                    }
+                    if (!c[i]) {
+                        h += '<td></td>';
+                    } else {
+                        h += '<td style="padding:10px;" colspan=' + c[i].s + '><a target="_blank" href="' + c[i].a + '">' + '<img border=0 height=220 width=' + 220 * c[i].s + ' src="' + c[i].i + '"/></a></td>';
+                    }
+                    f += c[i] ? c[i].s : 1;
+                    if (f % 3 == 0) {
+                        h +='</tr>'
+                    }
+                }
+                G('big-table-body').innerHTML = h;*/
+
+                var n = [{
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.dDvMFD&id=40826067787',
+                    i: 'http://img02.taobaocdn.com/bao/uploaded/i2/797603252/TB2uwcSaXXXXXbCXXXXXXXXXXXX_!!797603252.jpg_400x400.jpg',
+                    t: '秋季甜美乖巧韩版薄款圆领单排扣蕾丝边牛仔短外套',
+                    m: 210.00
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.5nQ9YD&id=40843114452',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i1/797603252/TB2ArIOaXXXXXaqXpXXXXXXXXXX_!!797603252.jpg_400x400.jpg',
+                    t: '初秋美搭出行款精致干练高腰显瘦娃娃领松紧腰优雅圆弧衣摆短外套',
+                    m: 189
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.IOLQ88&id=40843042500',
+                    i: 'http://img01.taobaocdn.com/bao/uploaded/i1/797603252/TB2yv.OaXXXXXXRXpXXXXXXXXXX_!!797603252.jpg_400x400.jpg',
+                    t: '秋季新品个性帅气小清新拼接纕钻修身短外套',
+                    m: 186
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.JFxFWF&id=40842178444',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB11sojFVXXXXXBXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '秋季必备时尚修身纯色百搭插手口袋松紧腰气质弹力舒适半身裙',
+                    m: 138
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.eba6XH&id=40825443556',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1AtMdFVXXXXXIXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '大降价！初秋清爽韩版熟女OL风气质V领蝙蝠袖单排扣百搭毛针织衫',
+                    m: 138
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.NYXNbo&id=40843238484',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1xRwdFVXXXXXIXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '秋季百搭流畅优美休闲明朗色彩条纹一字领套头修身舒适毛针织衫',
+                    m: 126
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.L6ryLF&id=40880652385',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1.rT7FVXXXXbRXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '秋季必备优雅温暖舒适横条纹蕾丝拼接柔软针织毛衣',
+                    m: 148
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.y3CWPk&id=40872897014',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T1fO9OFAVcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '秋季韩版休闲格纹配色洋气灯笼袖拼接V领宽松百搭棉质感上衣',
+                    m: 62
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8alMBD&id=40855989158',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1sj7cFVXXXXa0XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '秋季新上韩范个性街头纯色百搭中长款九分长袖单排多扣口袋衬衫',
+                    m: 139
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.CZFUzq&id=40986798248',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1X5ynGXXXXXaxXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '情侣式秋冬新款热款舒适休闲套头圆领百搭轻松绘图棉质卫衣',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.1xm6eF&id=40925082186',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1A.JKGXXXXXcCXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+                    t: '清新干净邻家女孩蕾丝带帽拉链开衫休闲套装',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.BBn5Xn&id=40854833288',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1Sg_jFVXXXXb3XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '时尚OL纯色大翻领针织拼接长袖百搭薄款开衫',
+                    m: 79
+                }];
+                var hot = [{
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.JNuKrR&id=40868744678',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1lvEsFVXXXXaAXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '洒泪狂降！！6643个性时尚BOY大字母星星条纹印花图案休闲T恤',
+                    m: 52
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.pzztZe&id=40834102919',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1mrC5FVXXXXawaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '酬宾直降！褶花滚边雪纺蝙蝠袖拼接条纹棉时包臀尚连衣裙',
+                    m: 81
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.c0SXdG&id=40834242282',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1t3eWFVXXXXbsaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '出厂价！新款简约时尚上班女粒扣V领半开襟抓皱7分袖宽松休闲衬衫',
+                    m: 79
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.oxSYnb&id=40868760933',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1kLm.FVXXXXc0XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '狂降！！时尚性感连帽排扣开身抽绳绑带收腰透视雪纺衫防晒衫',
+                    m: 45
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Zb9qCX&id=40816621266',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1O8EiFVXXXXbPXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: ' 韩国新品代购直发秋季纯净百搭轻柔棉纺质感圆领长袖打底T恤',
+                    m: 167
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.m5v7AS&id=40741814609',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1mevCFVXXXXcqXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购 灰白竖条短袖圆领宽松版时尚T恤',
+                    m: 77
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.fbxV4E&id=40840243026',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1O68KGXXXXXcvXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '3243时尚闪亮珍珠修饰镂花蕾丝中袖甜美上衣',
+                    m: 69
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.dCZ2Lu&id=40839439784',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/T1XQGYFEBaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季豹纹波点时尚七分袖抽绳收腰显瘦拼色甜美百搭上衣黑白色下架',
+                    m: 64
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.xmDbpS&id=40856430867',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T1lqSVFvNdXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '初秋必备韩街头潮时尚STOP字母印花图案V领长袖双口袋连帽长款T恤',
+                    m: 52
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.edFSxR&id=40834623670',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T11V5PFqhaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋装新款时尚乖巧学院风娃娃领恬美衬衣领格纹配色长袖休闲连衣裙',
+                    m: 74
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.EsJsXM&id=40851846296',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1DheOFt4dXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: 'HOT！韩版时尚娃娃领纯色百搭衬衣领配色拼接后背开叉休闲上衣',
+                    m: 69
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.yAeAlf&id=40851178808',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1CbqQFxhaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季百搭韩版闪耀红宝石花朵图案配色拼接甜美打底棉质上衣',
+                    m: 55
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.wKShIY&id=40869317591',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1b9KWFx4aXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '优雅经典知性可爱千鸟格车折修身后背拉链气质秋季百搭连衣裙',
+                    m: 66
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.JryjSw&id=40869353369',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1gcyZFAtaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '气质蕾丝公主范褶花立领叠层蕾丝荷叶拼接修身长袖秋季百搭上衣',
+                    m: 81
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.QmbFCx&id=40869329356',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T1fRKnFutaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季百搭韩版fashion纯色镂空钩织花性感露香肩宽松T恤',
+                    m: 69
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.mvVdT2&id=40882024460',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1rez8FVXXXXc9XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '降！初秋必备 韩版潮流范MM性感露肩百搭套头耀眼款毛针织衫',
+                    m: 152
+                }];
+
+                var women = [{
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Cx0EJo&id=40785731421',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1aSBsGXXXXXXbXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国代购正品直发 清新邻家女蓝色无袖翻领显瘦连衣裙',
+                    m: 415
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.jYhw9D&id=40803870637',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB12X7nFVXXXXaZXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: 'cherrykoko-流行魅力韩版纯色连衣裙/颜色:蓝色 年连衣裙',
+                    m: 327
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.7cNtHb&id=40807937425',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1uZ3dFVXXXXX_XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国代购秋季新款正品直发 韩范简约立领星星波点百搭打底衫',
+                    m: 228
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.tvnthD&id=40795458007',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB13HfUFVXXXXcmXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国秋季新品代购直发知性百搭简约中长袖棉纺修身V领打底衫',
+                    m: 181
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.vQ72vd&id=40817219825',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1nPooFVXXXXbMXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '瑞丽秋装新款轻熟女范通勤黑白配色格子反扣袖开叉下摆休闲衬衫',
+                    m: 61
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.cyyVdJ&id=40855113699',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1Cm3qFVXXXXbDXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '大气通勤风韩版排扣半开襟抓皱松紧收腰图腾印花雪纺连衣长裙',
+                    m: 94
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.7gSIeU&id=40869144604',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1GxRaFVXXXXaZaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季内搭 雪纺内里拼接棉假两件式松紧收腰甜美连衣裙',
+                    m: 54
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.9ARbaj&id=40869328161',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1PXC1FVXXXXaPaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋款优雅气质时尚新款红唇印花图案雪纺衫+美臀开叉长裙两件套装',
+                    m: 94
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Dg4ErE&id=40897485444',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T1fmagFytcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋装新款魅力上班女郎流行透明雪纺拼接式灯笼袖修身性感连衣裙',
+                    m: 62
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.j7a9Pe&id=40876438399',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1A_1mFrdbXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋款双肩闪亮粒扣松紧腰蝴蝶绑带拼接色乖巧圆领甜美连衣裙',
+                    m: 62
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.QCo5D8&id=40887001906',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1HtmiGXXXXXaPXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋冬成熟欧美风格时尚挂脖V领反扣袖假两件式百搭打底长袖上衣',
+                    m: 55
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.HineY4&id=40734530157',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1H3nZFVXXXXbPXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开店大促销 韩国正品代购直发 纯色弹力修身休闲长裤',
+                    m: 138
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.2rAxtZ&id=40877801100',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/T1u9yoFCBXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '可爱娃娃领配色拼接公主袖修身显瘦气质甜美连衣裙',
+                    m: 69
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Frq1bI&id=40839439784',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/T1XQGYFEBaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季豹纹波点时尚七分袖抽绳收腰显瘦拼色甜美百搭上衣黑白色下架',
+                    m: 64
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Xa9PRp&id=40886360933',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/T1qwmQFsXaXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '畅销款黑天鹅淑女大方褶花领蝴蝶结绑带收腰气质长袖连衣长裙',
+                    m: 81
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.OA4tfp&id=40886076693',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/T1.0eNFrxdXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '热门款甜美娃娃领荷叶大裙摆淑女大气长袖保暖修身显瘦气质连衣裙',
+                    m: 106
+                }];
+
+                var men = [{
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.i6Pfth&id=40987921422',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1bFGpGXXXXXbrXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光 秋季情侣单品街头潮流圆领撞色休闲舒适印花修身卫衣',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.4xi2MT&id=40990432369',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1U5yjGXXXXXXmXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬必备 帅气型男个性时尚防风保暖休闲修身立领夹克',
+                    m: 83
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.KRmfqb&id=40955102623',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1pwunGXXXXXaaXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光 帅气酷男英伦范撞色时尚修身塑形柔软舒适保暖长袖T恤',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.QNaLsl&id=40975249077',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1.imeGXXXXXbwXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬季 街头英伦型男风格保暖时尚印花柔和保暖打底T恤',
+                    m: 64
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.037Lt1&id=40947490759',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1419hGXXXXXcPXXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬单品 阳光型男时尚简约休闲修身百搭柔软长袖印花T恤',
+                    m: 64
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.YOPc7B&id=40928051999',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1Vft1GXXXXXaJaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬人气男款 成熟潮流绅士V领袖气质背心假两件修身T恤',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8Kolzr&id=40970324902',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1.j43GXXXXXcoXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬主打休闲男子防风抗寒柔软透气环保抗菌背心/马甲',
+                    m: 137
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.BGjkst&id=40936242754',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1GrJ7GXXXXXbYXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋季第二波 成熟暖男舒适柔软亲肤透气大方针织衫/毛衣',
+                    m: 120
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.0FGOOy&id=40965560074',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1A5N5GXXXXXc4XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '秋季人气款男士复古简约低调内涵舒适有型修身气质翻领休闲风衣',
+                    m: 154
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.07MpqZ&id=40910887687',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1uVGeGXXXXXc5XXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '帅气暖男风格柔和舒适牢固耐磨时尚渐变色圆领针织衫/毛衣',
+                    m: 120
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.EIUNdS&id=40949169606',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1WqKdGXXXXXXJXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '暖男来袭！温暖舒适双层保暖圆领柔软精细编制针织衫毛衣',
+                    m: 89
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Z9qkL1&id=40910751732',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1bNNVGXXXXXcNXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开业酬宾 秋季温暖帅气修身长袖带帽口袋针织衫毛衣',
+                    m: 137
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.5c0iAn&id=41021936395',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1sQqtGXXXXXXYXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光14秋冬男新款稳重气质绅士潮流撞色保暖修身针织衫/毛衣',
+                    m: 89
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.Np63JW&id=40986798248',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1X5ynGXXXXXaxXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '情侣式秋冬新款热款舒适休闲套头圆领百搭轻松绘图棉质卫衣',
+                    m: 86
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.NXyDP4&id=40968382033',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1iG9hGXXXXXcpXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '热销秋冬保暖单品 个性男气度柔软防风防水厚实英伦绅士毛呢大衣',
+                    m: 200
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.T1wLOh&id=40973954346',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1nhakGXXXXXaHXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光秋冬款 个性简约便捷防风抗寒保暖商务休闲拉链背心/马甲',
+                    m: 154
+                }];
+                var korea = [{
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.cbU4md&id=40782750982',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB14nP3FVXXXXXUXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购直发限购！ 白色典雅女神落叶镂空印花两件套裙',
+                    m: 867
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.c4pcVk&id=40742122427',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1YXkqFVXXXXbIXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品首发 街头范九分袖橙红宽松版气质上衣',
+                    m: 344
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.ymySxI&id=40718479733',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1LBghFVXXXXaAXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品首发 公主名媛范粉色美人鱼气质收腰衣裙',
+                    m: 450.5
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.dDQUqP&id=40768888453',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1OUcgFVXXXXbFXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开店大促销韩国正品代购首发 新款女版T恤',
+                    m: 228
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.8VBoI2&id=40767952565',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1Fa6AFVXXXXbFXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开店大促销！韩国正品代购 赫本风 裸色系无袖圆领长裙',
+                    m: 138
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.dWn4i6&id=40717907291',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1kXLBFVXXXXXbXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开店大促销韩国代购直发 纯色无袖圆领修身收腰上衣T恤',
+                    m: 147
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.khDzlu&id=40717563563',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1kxnNFVXXXXbTXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开业大促销！深蓝色无袖收腰翻领连衣裙',
+                    m: 255.5
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.wtN5hd&id=40716459445',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1c963FVXXXXcMXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品洒泪大降价黑色五分袖圆领公主范衬衫',
+                    m: 530
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.6vIFmg&id=40742765373',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB18wgcFVXXXXXIXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '开业狂降！ 韩国正品代购 蕾丝淑女范百搭休闲短裤',
+                    m: 289.5
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.bVguJg&id=40741518192',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB15yHyFVXXXXabXVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购 浅蓝色街头潮流牛仔裤',
+                    m: 263
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.pZvvtS&id=40734506268',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1sCfrFVXXXXbkaXXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '再遇时光开店大促销 韩国代购正品直发 可爱蓝修身休闲牛仔裤',
+                    m: 262
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.UNEx29&id=40821000062',
+                    i: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1lW_3FVXXXXa5XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国秋季新款直发 优雅简单百搭纯色显瘦百褶A字短裙',
+                    m: 318
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.ZvQ24y&id=40807657173',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1Qhj4FVXXXXbzXpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购直发新 秋款红色大气宽松休闲女纤维质感哈伦裤',
+                    m: 406
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.3eOasF&id=40807669301',
+                    i: 'http://gd3.alicdn.com/bao/uploaded/i3/TB1V_7iFVXXXXb9XpXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国代购秋装新款直发 温婉淑女百褶高腰亚麻棉质灰色半身裙',
+                    m: 203
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.YujgVw&id=40775976098',
+                    i: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1vzRoFVXXXXc3XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购首发 俏皮黑白色字母底图休闲棉质T恤',
+                    m: 193
+                }, {
+                    a: 'http://item.taobao.com/item.htm?spm=686.1000925.1000774.13.tdnVto&id=40762853691',
+                    i: 'http://gd2.alicdn.com/bao/uploaded/i2/TB1.zNKGXXXXXbXXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg_.webp',
+                    t: '韩国正品代购首发 黑色收身显瘦小脚休闲裤',
+                    m: 159
+                }]
+
+                var html = '';
+                var createTable = function(arr, id) {
+                    var h = '<div > <ul style="width:950px;margin:0 auto;">';
+                    for (var i = 0; i < arr.length; i++) {
+                        
+                        h += '<li style="vertical-align: top;float:left;margin:0 6px;width:222px;height:310px;overflow:hidden;text-align: center;"><a style="color: #9E4504;text-decoration: none;" target="_blank" href="' + arr[i].a + '">'
+                        + '<img style="max-height:220px;width:auto;" src="' + arr[i].i + '"/>'
+                        + '<p style="margin:5px;">' + arr[i].t +'</p>'
+                        + '<p style="margin:5px;color:#F76CFF">'
+                        + ' <span style="font-weight: bold;padding: 0 10px 0 26px;font-family:华文行楷;background: url(http://img04.taobaocdn.com/imgextra/i4/797603252/TB2N3lcapXXXXcQXXXXXXXXXXXX_!!797603252.png) no-repeat;line-height:30px;display:inline-block;">Price</span>'
+                        + '<span style="font-family:georgia;font-size:13px;font-weight: bold;">' + arr[i].m.toFixed(2) + '元</p></a></li>';
+                        
+                    }
+                    h += '</ul></div><p style="clear:both"></p>';
+                    return h;
+                }
+                var createTitle = function (link, text) {
+                    return '<div style="margin:20px 0;">'
+                        + ' <div style="background: url(http://img04.taobaocdn.com/imgextra/i4/797603252/TB2ozhbapXXXXaeXpXXXXXXXXXX_!!797603252.png) no-repeat;height:248px;width:950px;margin:0 auto;">'
+                        + '     <a href="' + link + '" target="_blank" style="text-align:left;font-size:25px;font-weight:bold;color: #F0627E;line-height: 250px;margin-left: 400px;text-decoration: none;">'
+                        + text 
+                        + '</a></div></div>';
+                }
+                /*html += createTitle('http://shop112949449.taobao.com/search.htm?spm=a1z10.1.w5003-8401472911.1.lTvqLA&search=y&orderType=newOn_desc&v=1&scene=taobao_shop', '新品上架');
+                html += createTable(n);
+                html += createTitle('http://shop112949449.taobao.com/search.htm?spm=a1z10.1.w5003-8401472911.12.lTvqLA&search=y&orderType=hotsell_desc&v=1&scene=taobao_shop', '特价专区');
+                html += createTable(hot);*/
+
+                html += createTitle('http://shop112949449.taobao.com/category-964566858.htm?spm=a1z10.1.0.0.8eIMFa&search=y&catName=%CA%B1%C9%D0%CA%E7%C5%AE&v=1', '女装单品');
+                html += createTable(women);
+                html += createTitle('http://shop112949449.taobao.com/category-964566870.htm?spm=a1z10.1.0.0.Y3YjT2&search=y&catName=%B3%B1%C1%F7%C4%D0%D7%B0&v=1', '潮流男装');
+                html += createTable(men);
+
+                html += createTitle('http://shop112949449.taobao.com/category-964566846.htm?spm=a1z10.1.0.0.n3vGfR&search=y&catName=%BA%AB%B9%FA%B4%FA%B9%BA&v=1', '韩国代购');
+                html += createTable(korea);
+
+                G('my-container').innerHTML = html;
+            })();
+        </script>
+    </div>
+</div>
+
+<p>&nbsp;</p>

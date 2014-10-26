@@ -1,0 +1,91 @@
+/* 导航背景色*/ 
+.skin-box-bd{
+    background: none;
+    height: 36px;
+    font-family: '微软雅黑';
+}
+/* 导航条背景色*/  
+.skin-box-bd .menu-list{background: none;} 
+/*首页/店铺动态链接*/  
+.skin-box-bd .menu-list .link{
+    background: none;color:#666;
+    margin: 0 10px;
+} 
+
+/*首页/店铺动态文字颜色*/  
+.skin-box-bd .menu-list .menu .title{color:#666;} 
+/*所有分类背景色*/  
+.all-cats .link{background: none;} 
+/*所有分类右边线*/  
+.all-cats .link{} 
+/*所有分类文字颜色*/  
+.skin-box-bd .all-cats .title{color:#666;} 
+/*二级菜单背景*/  
+.popup-content{background:#8FCB8D;} 
+
+/*二级菜单hover*/
+.popup-content .cats-tree .cat-hd-hover{
+    background:#7BC37A;
+}
+/*三级菜单颜色*/
+.popup-content .cats-tree  .snd-pop-inner{
+    background: #8FCB8D;
+    height: 400px;
+}
+/*三级菜单hover*/
+.popup-content .cats-tree .snd-cat-hd-hover{
+    background:#7BC37A;
+}
+/*二级菜单文字*/  
+.popup-content .cats-tree .cat-hd-hover .fst-cat-name{
+    color:#fff;
+} 
+/*三级菜单hover文字*/  
+.popup-content .cats-tree .snd-cat-hd-hover .snd-cat-name {
+    color:#fff;
+} 
+/*三级菜单飘过文字颜色*/  
+.popup-content .cats-tree .snd-cat-name{
+    color:#fff;
+    font-size: 14px;
+}
+
+/*为了改菜单大小*/
+.skin-box-bd .popup-content .cats-tree .fst-cat,
+.popup-content .cats-tree .fst-cat-hd {
+    height: 36px;
+}
+/*二级菜单文字*/
+.skin-box-bd .popup-content .cats-tree .fst-cat .cat-name {
+    color: #fff;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+}
+/*选中的项*/
+.skin-box-bd .menu-list .menu-selected .link {
+    background: #FFFCD4;
+}
+/*选中的文字*/
+.skin-box-bd .menu-list .menu-selected .link .title {
+    text-shadow: yellow 0 0 20px;
+    background: none;
+}
+.skin-box-bd .menu-list .menu-hover .link {
+    background: #fff;
+}
+.skin-box-bd .menu-list .menu {
+    background: none;
+}
+/*所有宝贝*/
+.all-cats {
+    background: none;
+}
+/*下拉icon*/
+.skin-box-bd .all-cats .link .popup-icon {
+   background: url(http://gtms01.alicdn.com/tps/i1/T18WsRFcpdXXXPXsT8-51-381.gif) -20px -50px no-repeat;
+}
+/*二级菜单li*/
+.skin-box-bd .popup-content .cats-tree .fst-cat {
+    border: none;
+}
